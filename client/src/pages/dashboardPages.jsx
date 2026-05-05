@@ -25,9 +25,9 @@ const DashboardPages = () => {
   return (
       <Card className="text-center">
       <Row className='g-4 mt-3'>
-      <span className='border border-primary'>
+
       <h2  className='fw-bold fs-1 shadow-sm '>Dashboard</h2>
-     </span>
+
         <Col md={4}>
          <Card className='shadow-sm border-0 rounded-4 text-center p-3 card-dashboard text-bg-success'>
         <h6 className='card-text'>Médicos</h6>
