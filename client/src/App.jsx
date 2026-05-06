@@ -8,13 +8,15 @@ import DashboardPages from './pages/dashboardPages';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MyNavbar from './components/navbar';
+import LogoSenacPages from './pages/logoSenacPages';
 
 const App = () => {
   return (
     <BrowserRouter>
     <MyNavbar />
     <Routes>
-    <Route path='/medicos' element={<MedicoPages />}/>
+    <Route path='/logo' element={<LogoSenacPages />}/>
+    <Route path='/' element={<MedicoPages />}/>
     <Route path='/pacientes' element={<PacientePages />}/>
     <Route path='/atendimentos' element={<AtendimentoPages />}/>
     <Route path='/receitas' element={<ReceitaPages />}/>
