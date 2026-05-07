@@ -41,7 +41,7 @@ const ReceitaPages = () => {
         setForm({
         atendimento_id: receita.atendimento_id,
         descricao: receita.descricao,
-        data_receita: receita.data_receita,
+        data_receita: receita.data_receita?.split('T')[0],
         });
 
         setEditando(receita.id);

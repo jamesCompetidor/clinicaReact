@@ -7,6 +7,7 @@ const listar = async() => {
             r.atendimento_id,
             r.descricao,
             r.data_receita,
+            r.criado_em,
             m.nome AS medico_nome,
             p.nome AS paciente_nome
         FROM receitas r

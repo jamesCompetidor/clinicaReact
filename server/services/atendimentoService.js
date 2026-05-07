@@ -29,8 +29,8 @@ const criar = async (atendimentos) => {
   await db.query(
     "INSERT INTO atendimentos (medicos_id, pacientes_id, data_atendimento, observacoes) VALUES (?, ?, ?, ?)",
     [
-      atendimentos.medico_id,
-      atendimentos.paciente_id,
+      atendimentos.medicos_id,
+      atendimentos.pacientes_id,
       atendimentos.data_atendimento,
       atendimentos.observacoes,
     ],
@@ -41,8 +41,8 @@ const atualizar = async (id, atendimentos) => {
   const result = await db.query(
     "UPDATE atendimentos SET medicos_id = ?, pacientes_id = ?, data_atendimento = ?, observacoes = ? WHERE id = ?",
     [
-      atendimentos.medico_id,
-      atendimentos.paciente_id,
+      atendimentos.medicos_id,
+      atendimentos.pacientes_id,
       atendimentos.data_atendimento,
       atendimentos.observacoes,
       id,
